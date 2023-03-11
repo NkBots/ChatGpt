@@ -1,0 +1,27 @@
+import os
+
+
+BOT_TOKEN = os.getenv('6097657651:AAFTRau5vTfB9ss5QN3V4fhq8K0YmN9HD1Q')
+
+RAILWAY_APP_NAME = os.getenv('nkaibot')
+
+WEBHOOK_HOST = f'https://nkaibot.herokuapp.com'
+WEBHOOK_PATH = f'/webhook/6097657651:AAFTRau5vTfB9ss5QN3V4fhq8K0YmN9HD1Q'
+WEBHOOK_URL = f'{WEBHOOK_HOST}{WEBHOOK_PATH}'
+
+WEBAPP_HOST = '0.0.0.0'
+WEBAPP_PORT = os.getenv('PORT', default=8000)
+
+WORKS_CHATS = [
+    os.getenv('VCHAT_ID'),
+    os.getenv('SCHAT_ID'),
+]
+
+# AI
+AI_KEY = os.getenv('AI_KEY')
+MODEL = 'text-davinci-003'
+TEMPERATURE = 0.5
+MAX_TOKENS = 1000
+TOP_P = 1.0
+FREQUENCY_PENALTY = 0.5
+PRESENCE_PENALTY = 0.0
