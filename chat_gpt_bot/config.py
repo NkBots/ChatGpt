@@ -5,7 +5,7 @@ BOT_TOKEN = os.getenv('BOT_TOKEN, 6097657651:AAFTRau5vTfB9ss5QN3V4fhq8K0YmN9HD1Q
 
 RAILWAY_APP_NAME = os.getenv('RAILWAY_APP_NAME', nkaibot)
 
-WEBHOOK_HOST = f'https://nkaibot.herokuapp.com'
+WEBHOOK_HOST = f'https://{RAILWAY_APP_NAME}.herokuapp.com'
 WEBHOOK_PATH = f'/webhook/{BOT_TOKEN}'
 WEBHOOK_URL = f'{WEBHOOK_HOST}{WEBHOOK_PATH}'
 
