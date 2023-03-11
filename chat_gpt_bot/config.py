@@ -1,12 +1,12 @@
 import os
 
 
-BOT_TOKEN = os.getenv('6097657651:AAFTRau5vTfB9ss5QN3V4fhq8K0YmN9HD1Q')
+BOT_TOKEN = os.getenv('BOT_TOKEN, 6097657651:AAFTRau5vTfB9ss5QN3V4fhq8K0YmN9HD1Q')
 
-RAILWAY_APP_NAME = os.getenv('nkaibot')
+RAILWAY_APP_NAME = os.getenv('RAILWAY_APP_NAME', nkaibot)
 
 WEBHOOK_HOST = f'https://nkaibot.herokuapp.com'
-WEBHOOK_PATH = f'/webhook/6097657651:AAFTRau5vTfB9ss5QN3V4fhq8K0YmN9HD1Q'
+WEBHOOK_PATH = f'/webhook/{BOT_TOKEN}'
 WEBHOOK_URL = f'{WEBHOOK_HOST}{WEBHOOK_PATH}'
 
 WEBAPP_HOST = '0.0.0.0'
